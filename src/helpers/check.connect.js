@@ -25,6 +25,7 @@ const checkOverload = () =>{
         console.log(`Memory usage: ${memoryUsage / 1024 / 1024}MB`)
         if(numConnections > maxConnections){
             console.log(`Connections overload detected!`)
+            //notify.send(....)
         }
     }, _SECONDS) //Monitor every 5 seconds
 }
